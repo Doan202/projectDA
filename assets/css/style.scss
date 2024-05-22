@@ -22,10 +22,13 @@ header {
 		display: flex;
 		button {
 			border-radius: 32px;
-			border: 1px solid #005a80;
+			border: 1px solid $primary;
 			padding: 19px 44px;
 			background: #fff;
-			color: #005a80;
+			color: $primary;
+			font-family: "Lato", sans-serif;
+			font-size: 16px;
+			font-weight: 700;
 		}
 	}
 }
@@ -36,28 +39,50 @@ header {
 		.item {
 			height: 100%;
 			border-radius: 20px;
-			border: 3px solid #005a80;
+			border: 3px solid $primary;
 			background: #fff;
 			padding: 25px 20px 46px;
 			&:hover {
 				box-shadow: 0 0 10px 0 $primary;
+				border: none;
+				transform: translateY(-10px);
 			}
 			p {
 				padding-top: 20px;
+				color: #000000;
 			}
 			i {
 				color: $primary;
+			}
+			h5 {
+				color: #165fab;
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 24.2px;
+				text-transform: uppercase;
+			}
+			b {
+				color: #000000;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 16.8px;
 			}
 			h2 {
 				position: relative;
 				padding-right: 5px;
 				width: fit-content;
 				margin: 0 auto;
+				color: #165fab;
+				font-size: 36px;
+				font-weight: 500;
+				line-height: 43.57px;
+
 				&::after {
 					position: absolute;
 					top: -10px;
 					right: -15px;
 					content: "đ";
+					color: #165fab;
 				}
 			}
 			.content-intro {
