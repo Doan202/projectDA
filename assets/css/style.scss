@@ -37,15 +37,19 @@ header {
 	.content-text {
 		margin-top: 30px;
 		.item {
-			height: 100%;
+			min-height: 100px;
 			border-radius: 20px;
 			border: 3px solid $primary;
 			background: #fff;
 			padding: 25px 20px 46px;
+			height: fit-content;
 			&:hover {
 				box-shadow: 0 0 10px 0 $primary;
 				border: none;
 				transform: translateY(-10px);
+			}
+			.down {
+				display: none;
 			}
 			p {
 				padding-top: 20px;
